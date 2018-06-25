@@ -21,7 +21,7 @@
               Please enter a value to be decoded.
           </div>
           <pre>{{ dencoder.original | decode }}</pre>
-          <small>Copy functionality...</small>
+          <button [copyText]="(dencoder.original | decode)" class="btn btn-light">Copy Decoded</button>
         </div>
         <div class="tab-pane fade" id="nav-encoded" role="tabpanel" aria-labelledby="nav-encoded-tab" [ngClass]="{ active: dencoder.tab == 'encoded', show: dencoder.tab == 'encoded' }">
             <br/>
@@ -29,7 +29,7 @@
                 Please enter a value to be encoded.
             </div>
           <pre>{{ dencoder.original | encode }}</pre>
-          <small>Copy functionality...</small>
+          <button [copyText]="(dencoder.original | encode)" class="btn btn-light">Copy Encoded</button>
         </div>
       </div>
     </div>
