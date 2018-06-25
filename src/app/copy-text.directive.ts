@@ -1,5 +1,6 @@
 import { Input, HostListener, Directive } from '@angular/core';
 
+// http://www.riptutorial.com/angular2/example/17038/copy-to-clipboard-directive
 @Directive({
   selector: '[copyText]'
 })
