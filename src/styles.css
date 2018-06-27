@@ -2,3 +2,8 @@
   height: 50vh;
   width:100%;
 }
+
+.decoded-value, .encoded-value {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
